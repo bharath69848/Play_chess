@@ -180,12 +180,6 @@ export default function App() {
                </button>
              </div>
           </div>
-
-          <div className="relative z-20 mt-auto">
-            <div className="text-[10px] font-pixel text-emerald-700/80 leading-relaxed border-t-2 border-emerald-900 pt-4 mt-8">
-              API_LINK: SECURE<br/>
-              LATENCY: OPTIMAL
-            </div>
           </div>
         </div>
       </main>
