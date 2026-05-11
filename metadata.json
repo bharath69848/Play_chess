@@ -1,0 +1,6 @@
+{
+  "name": "Play Chess",
+  "description": "Play chess against a powerful AI bot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
