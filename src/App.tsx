@@ -71,7 +71,7 @@ export default function App() {
       }
 
       const data = await response.json();
-      
+
       if (data.bestmove) {
         // Wait a slight random amount for realism
         setTimeout(() => {
@@ -137,7 +137,7 @@ export default function App() {
       </header>
 
       <main className="flex flex-col md:flex-row gap-10 items-center md:items-start max-w-5xl w-full px-6">
-        
+
         {/* Chess Board Area */}
         <div className="w-full max-w-[500px] shrink-0 p-2 md:p-4 bg-black border-4 border-emerald-600 shadow-[8px_8px_0px_#065f46] relative">
           <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(rgba(18,16,16,0)_50%,rgba(0,0,0,0.25)_50%)] bg-[length:100%_4px] z-10" />
@@ -166,20 +166,19 @@ export default function App() {
           <div className="relative z-20">
              <h2 className="text-xs font-pixel tracking-wider text-emerald-600 mb-4">{'>'}{'>'} EXECUTE.COMMAND</h2>
              <div className="flex flex-col gap-4">
-               <button 
+               <button
                  onClick={resetGame}
                  className="w-full border-4 border-emerald-600 bg-emerald-900 hover:bg-emerald-500 hover:text-black text-emerald-400 font-pixel text-xs py-4 transition-colors active:translate-y-1 active:translate-x-1 active:shadow-none shadow-[4px_4px_0px_#047857]"
                >
                  INITIATE: WHITE
                </button>
-               <button 
+               <button
                  onClick={playAsBlack}
                  className="w-full border-4 border-emerald-800 bg-black hover:bg-emerald-800 hover:text-emerald-100 text-emerald-600 font-pixel text-xs py-4 transition-colors active:translate-y-1 active:translate-x-1 active:shadow-none shadow-[4px_4px_0px_#064e3b]"
                >
                  INITIATE: BLACK
                </button>
              </div>
-          </div>
           </div>
         </div>
       </main>
